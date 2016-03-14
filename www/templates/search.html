@@ -1,0 +1,18 @@
+<ion-view view-title="Search">
+  <ion-content has-bouncing="false" class="has-header">
+    <div id="map"></div>
+  </ion-content>
+  <ion-footer-bar class="item-input-inset bar bar-calm">
+
+    <button ng-click="setMyPosition()" class="button button-icon button-clear ion-android-locate"></button>
+
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios7-search placeholder-icon"></i>
+      <input id="pac" ng-model="currentLocation" type="search" placeholder="Search">
+    </label>
+
+    <button ng-click="getLatLng()" class="button button-icon button-clear ion-ios-search-strong"></button>
+
+
+  </ion-footer-bar>
+</ion-view>
